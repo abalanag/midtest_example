@@ -6,7 +6,9 @@ public class Triangle extends Shapes {
     private double base;
     private double height;
 
-    public Triangle (final double sideOne, final double sideTwo, final double base, final double height){
+    public Triangle (final double sideOne, final double sideTwo, final double base,
+                     final double height, final String shapeType){
+        super(shapeType);
         this.sideOne = sideOne;
         this.sideTwo = sideTwo;
         this.base = base;
