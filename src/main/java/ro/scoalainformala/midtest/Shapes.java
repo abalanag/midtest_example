@@ -4,13 +4,13 @@ public abstract class Shapes {
 
     private String shapeType;
 
-    public abstract double calculateSurface ();
-
-    public abstract double calculateArea ();
-
-    public Shapes (final String shapeType) {
+    public Shapes(final String shapeType) {
         this.shapeType = shapeType;
     }
+
+    public abstract double calculateSurface();
+
+    public abstract double calculateArea();
 
     @Override
     public boolean equals(final Object obj) {

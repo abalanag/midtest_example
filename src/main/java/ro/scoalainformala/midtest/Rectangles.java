@@ -4,7 +4,7 @@ public class Rectangles extends Shapes {
     private double width;
     private double length;
 
-    public Rectangles (final double width, final double length, final String shapeType) {
+    public Rectangles(final double width, final double length, final String shapeType) {
         super(shapeType);
         this.width = width;
         this.length = length;
