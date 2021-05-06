@@ -1,9 +1,9 @@
 package ro.scoalainformala.midtest;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class ShapesCheckerUtil {
-    static Boolean checkForSimilarShapesUtil(ArrayList<Shapes> allShapes) {
+    static Boolean checkForSimilarShapesUtil(List<Shapes> allShapes) {
 
         for (int i = 0; i < allShapes.size() - 1; i++) {
             for (int j = i + 1; j < allShapes.size(); j++) {
@@ -15,7 +15,7 @@ public class ShapesCheckerUtil {
         return false;
     }
 
-    static String calculateTotalAreaAndPerimeterUtil(ArrayList<Shapes> allShapes) {
+    static String calculateTotalAreaAndPerimeterUtil(List<Shapes> allShapes) {
         if (checkForSimilarShapesUtil(allShapes)) {
             return "You can't have 2 object of the same size";
         } else {
